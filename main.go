@@ -1,33 +1,17 @@
 package main
 
-
-
 import (
-
 	"flag"
-
 	"fmt"
-
-"log"
-
+	"log"
 	"math/big"
-
 	"sort"
-
 	"strconv"
-
 	"strings"
-
 	"time"
 
-
-
 	"github.com/gosnmp/gosnmp"
-
 )
-
-
-
 const (
 
 	oidIfName        = ".1.3.6.1.2.1.31.1.1.1.1"
@@ -39,8 +23,6 @@ const (
 	oidIfHCOutOctets = ".1.3.6.1.2.1.31.1.1.1.10"
 
 )
-
-
 
 type Iface struct {
 
@@ -55,7 +37,6 @@ InOctets  uint64
 OutOctets uint64
 
 }
-
 
 
 func main() {
